@@ -32,12 +32,41 @@
         </ul>
     </nav>
     <section class="container">
-    	<h1 class="large text-primary">
-            HEADING
+        <h1 class="large text-primary">
+            Add Your Education
         </h1>
         <p class="lead">
-            <i class="fas fa-user"></i>
+            <i class="fas fa-graduation-cap"></i> Add any school, bootcamp, etc that you have attended
         </p>
+        <small>* = required field</small>
+        <form class="form">
+            <div class="form-group">
+                <input type="text" name="school" placeholder="* School or Bootcamp" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="degree" placeholder="* Degree or Certificate" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="fieldofstudy" placeholder="Field of Study">
+            </div>
+            <div class="form-group">
+                <h4>From Date</h4>
+                <input type="date" name="from">
+            </div>
+            <div class="form-group">
+                <h4>To Date</h4>
+                <input type="date" name="to">
+            </div>
+            <div class="form-group">
+                <p><input type="checkbox" name="current" value=""> Current School</p>
+            </div>
+            <div class="form-group">
+                <textarea name="description" cols="30" rows="5" placeholder="Job Description">
+                </textarea>
+            </div>
+            <input class="btn btn-primary my-1" type="submit" value="Submint">
+            <a class="btn my-1" href="dashboard.html">Go Back</a>
+        </form>
     </section>
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
